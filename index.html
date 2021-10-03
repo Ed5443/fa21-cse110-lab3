@@ -62,11 +62,20 @@
 
             <section>
                 <h2 id="misc"><i>Miscellaneous</i></h2>
+                <b>Video Recording</b><br>
+                <video controls width="350">
+                    <source src="MeetingVideo.mp4" type="video/mp4">
 
+                    Sorry for the video...
+                </video><br>
+                <b>Audio Recording</b><br>
+                <audio controls src="MeetingAudio.mp3">
+                    Your browser does not support the <code>audio</code> element.
+                </audio>
             </section><hr>
             <section>
                 
-                <label for="comments">Comments</label><br>
+                <label for="comments"><b>Comments<b></label><br>
                 <textarea id="comments" name="comments" rows="4" cols="33">Add a comment...
                 </textarea>
             </section><hr>
@@ -108,10 +117,18 @@
                     <option value="sixth">Sixth</option>
                     <option value="seventh">Seventh</option>
                 </select>
+                <span>
+                    <label for="position">Enter your position:</label>
+                    <input list="positions" id="position" name="positions" />
+                    <datalist id="positions">
+                        <option value="Professor"></option>
+                        <option value="Teacher Assistent"></option>
+                        <option value="Tutor"></option>
+                        <option value="Student"></option>
+                    </datalist>
+                </span>
                 <span><input type="button" value="Subscribe!"></span>
-
             </form>
         </footer>
     </body>
-
 </html>
