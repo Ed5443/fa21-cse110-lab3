@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <link rel="icon" href="/meeting.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" width="350">
+            <h1 align="center">UCSD CSE110</h1>
+            <h2 align="center">Brainstorm Test</h2>
+            <h3 align="center">October 2, 2021</h3>
+            <div><b>TABLE of CONTENTS</b></div>
+        
+            <nav>
+                <ol>
+                    <li><a href="#attendance">Attendance</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#misc">Miscellaneous</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                    <li><a href="#sub">Subscribe</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <section>
+                <h2 id="attendance">Attendance</h2>
+                <h4>Present:</h4>
+                <p>
+                    Steve Rogers<br>
+                    Tony Stark<br>
+                    Peter Parker<br>
+                    Clint Barton<br>
+                </p>
+                <h4>Absent:</h4>
+                    <span>Bruce Banner</span>
+                    <div>Natasha Romannoff</div> 
+            </section><hr>
+
+            <section>
+                <h2 id="agenda">Agenda</h2>
+                <details>
+                    <summary>Learn HTML</summary>
+                    <p>
+                        The HyperText Markup Language, or HTML is the standard markup
+                         language for documents designed to be displayed in a web browser.
+                    </p>
+                </details>
+                <div><strong>Unfinished Buisness</strong></div>
+                <p>
+                    <u>Weekly Quizes</u>
+                </p>
+                <div><strong>New Buisness</strong></div>
+                <ul>
+                    <li><input type="checkbox">Complete Lab 2</li>
+                    <li><input type="checkbox">Turn in Lab</li>
+                </ul>
+            </section><hr>
+
+            <section>
+                <h2 id="misc"><i>Miscellaneous</i></h2>
+
+            </section><hr>
+            <section>
+                
+                <label for="comments">Comments</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="33">Add a comment...
+                </textarea>
+            </section><hr>
+        </main>
+        <footer>
+            <h4 id="sub">Fill form to Subscribe!</h4>
+            <form>
+                <span><label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                </span>
+                <span><label for="email">Enter your email: </label>
+                    <input type="text" name="email" id="email" required>
+                </span>
+                <span><label for="date">Enter the date: </label>
+                    <input type="date" name="date" id="date" required>
+                </span>
+                <br>
+                <span>
+                <fieldset>
+                    <legend>Choose your class</legend>
+                    <input type="radio" id="100" name="100">
+                    <label for="100">CSE 100</label><br/>
+
+                    <input type="radio" id="101" name="101">
+                    <label for="101">CSE 101</label><br/>
+
+                    <input type="radio" id="110" name="110">
+                    <label for="110">CSE 110</label>
+                </fieldset></span>
+
+                <label for="college">Choose a College:</label>
+                <select name="college" id="college">
+                    <option value="">--Please choose an option--</option>
+                    <option value="revelle">Revelle</option>
+                    <option value="muir">Muir</option>
+                    <option value="marshall">Marshall</option>
+                    <option value="warren">Warren</option>
+                    <option value="erc">ERC</option>
+                    <option value="sixth">Sixth</option>
+                    <option value="seventh">Seventh</option>
+                </select>
+                <span><input type="button" value="Subscribe!"></span>
+
+            </form>
+        </footer>
+    </body>
+
+</html>
