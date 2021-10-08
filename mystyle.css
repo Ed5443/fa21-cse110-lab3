@@ -1,0 +1,121 @@
+*{
+    max-height: 2048pt;
+    max-width: 2048pt;
+    min-height: 10pt;
+    min-width: 10pt;
+}
+
+main h2{
+    
+    font-family: 'Heebo', sans-serif;
+}
+
+body{                               /*background colors and margins*/
+    margin:auto;
+    background-color:snow;
+    padding-left: 5mm;
+    padding: right 5mm;
+}
+
+footer{                             /*box in the footer*/
+    border: 4px solid #01c7c7;
+    border-style:double;
+    padding: .5em;
+    padding-right: 5mm;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color:ivory;
+}
+
+.contents{
+    border: solid black;
+    border-width: 3px;
+    border-spacing: 0.7ex;
+    width: 4.4cm;
+    height: 3.4cm;
+}
+
+hr{                         /*adjusted size of hr*/
+    max-height: 2ex;
+    min-height: 0.1mm;
+    width: 185ch;
+    margin-right: 3cm;
+
+}
+
+#attendance{
+    text-decoration:underline;
+}
+
+#agenda{
+    text-decoration:underline;
+}
+
+#misc{
+    text-decoration:underline;
+}
+
+button:active {
+    color:darkblue;
+}
+
+
+
+fieldset> legend{
+    color:darkslateblue;
+    font-style: oblique;
+    display: block;
+
+}
+
+video:hover, audio:hover{
+    border: 3px solid cyan;
+}
+
+a[href="#sub"]{
+    border:2px solid darkblue;
+}
+
+
+.av{
+    display: grid;
+    grid-template-columns: 30px 370px 60px 370px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". title1 .title2"
+    ". body1 . body2"
+    ". body1 . body2";
+}
+
+.vidtitle{
+    grid-area: title1;
+}
+
+.audtitle{
+    grid-area: title2;
+}
+
+.vid{
+    grid-area: body1;
+}
+
+.aud{
+    grid-area: body2;
+}
+
+@media screen and (min-width: 900px){
+    body{
+        padding-right: 2mm;
+    }
+}
+
+label ~ textarea:hover{
+    border: 3px solid red;
+}
+
+img + h1{
+    font-family: 'Sarabun', sans-serif;
+}
+

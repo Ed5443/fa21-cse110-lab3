@@ -5,16 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes</title>
         <link rel="icon" href="/meeting.ico" type="image/x-icon">
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            h3{
+                color: rgb(0, 109, 128);
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <header>
             <img src="logo.png" width="350" alt="CSE logo">
-            <h1>UCSD CSE110</h1>
-            <h2>Brainstorm Test</h2>
+            <h1 style="color:#4275F5;text-align: center;">UCSD CSE110</h1>
+            <h2 style="color:hsl(196,41,46);text-align: center;">Brainstorm Test</h2>
             <h3>October 2, 2021</h3>
             <div><b>TABLE of CONTENTS</b></div>
         
-            <nav>
+            <nav class="contents">
                 <ol>
                     <li><a href="#attendance">Attendance</a></li>
                     <li><a href="#agenda">Agenda</a></li>
@@ -44,7 +51,7 @@
             <section>
                 <h2 id="agenda">Agenda</h2>
                 <details>
-                    <summary>Learn HTML</summary>
+                    <summary class="learn">Learn HTML</summary>
                     <p>
                         The HyperText Markup Language, or HTML is the standard markup
                          language for documents designed to be displayed in a web browser.
@@ -56,28 +63,28 @@
                 </p>
                 <div><strong>New Buisness</strong></div>
                 <ul>
-                    <li><input type="checkbox">Complete Lab 2</li>
-                    <li><input type="checkbox">Turn in Lab</li>
+                    <li><input type="checkbox">Complete Lab 3</li>
+                    <li><input type="checkbox">Turn in Lab 3</li>
                 </ul>
                 <hr>
             </section>
 
-            <section>
+            
                 <h2 id="misc"><i>Miscellaneous</i></h2>
-                <b>Video Recording</b><br>
-                <video controls width="350">
+            <section class="av">
+                <b class="vidtitle">Video Recording</b><br>
+                <video controls width="350" class="vid">
                     <source src="MeetingVideo.mp4" type="video/mp4">
 
                     Sorry for the video...
                 </video><br>
-                <b>Audio Recording</b><br>
-                <audio controls src="MeetingAudio.mp3">
+                <b class="audtitle">Audio Recording</b><br>
+                <audio controls src="MeetingAudio.mp3" class="aud">
                     Your browser does not support the <code>audio</code> element.
                 </audio>
-                <hr>
             </section>
             <section>
-                
+                <hr>
                 <label for="comments"><b>Comments</b></label><br>
                 <textarea id="comments" name="comments" rows="4" cols="33">Add a comment...
                 </textarea>
