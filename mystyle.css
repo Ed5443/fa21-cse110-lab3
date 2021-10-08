@@ -32,6 +32,7 @@ footer{                             /*box in the footer*/
 .contents{
     border: solid black;
     border-width: 3px;
+    border-radius: 25px;
     border-spacing: 0.7ex;
     width: 4.4cm;
     height: 3.4cm;
@@ -87,6 +88,7 @@ a[href="#sub"]{
     ". title1 .title2"
     ". body1 . body2"
     ". body1 . body2";
+    position:static;
 }
 
 .vidtitle{
@@ -119,3 +121,8 @@ img + h1{
     font-family: 'Sarabun', sans-serif;
 }
 
+.logo{
+    position: -webkit-sticky;
+    position:sticky;
+    top:15px;
+}
